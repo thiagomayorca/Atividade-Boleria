@@ -1,0 +1,52 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>form</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  
+  <div id="container">
+
+    
+     <ion-card>
+      <img alt="Silhouette of mountains" [src]="receita.imagem" />
+      <ion-card-header>
+        <ion-card-title>Formulário</ion-card-title>
+        
+      </ion-card-header>
+    
+      <ion-card-content>
+        A vida é muito simples, coma bolo! Para dias frios nada melhor do que um bolo! Variedades de sabores é aqui! Com muito amor nosso queridinho bolo. 
+      </ion-card-content>
+    </ion-card> 
+
+
+<form #form="ngForm" (ngSubmit)="update(form)">
+
+  <ion-item>
+    <ion-label>Receita:</ion-label>
+    <ion-input type="text" name="receita" [ngModel]="receita.receita"></ion-input>
+  </ion-item>
+
+  <ion-item> 
+  <ion-label>Ingredientes:</ion-label>      
+    <ion-input type="text" name="ingredientes" [ngModel]="receita.ingredientes"></ion-input>
+  </ion-item>
+
+  <ion-item> 
+    <ion-label>Imagem:</ion-label>      
+      <ion-input type="text" name="imagem" [ngModel]="receita.imagem"></ion-input>
+    </ion-item>
+
+    <ion-item> 
+      <ion-label>Quantidade:</ion-label>      
+        <ion-input type="text" name="quantidade" [ngModel]="receita.quantidade"></ion-input>
+      </ion-item>
+
+
+  <ion-button type="submit" color="success" expand="block">Atualizar</ion-button>
+
+
+</form>

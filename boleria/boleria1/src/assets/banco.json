@@ -1,0 +1,40 @@
+{
+  "receitas": [
+    {
+      "receita": "Bolo de chocolate leite",
+      "ingredientes": "Chocolate",
+      "imagem": "https://media.istockphoto.com/id/1370520449/pt/foto/slice-of-chocolate-cake-with-glaze.jpg?b=1&s=170667a&w=0&k=20&c=CtfjvLy5I0Jtnrz4JG_znC_qQpSYSBDK6Vz5JKadOtM=",
+      "quantidade": "9",
+      "id": 1
+    },
+    {
+      "receita": "Bolo de Cenoura",
+      "ingredientes": "Cenoura",
+      "quantidade": "1",
+      "imagem": "https://media.istockphoto.com/id/1334230992/pt/foto/carrot-layered-cake.jpg?b=1&s=170667a&w=0&k=20&c=CobvYi47aFS6yYnXk0R_zgXnZBb9kCJNYZqfaHQd13w=",
+      "id": 2
+    },
+    {
+      "receita": "Torta de limão",
+      "ingredientes": "Limão",
+      "quantidade": "2",
+      "imagem": "https://media.istockphoto.com/id/177535417/pt/foto/tarte-com-creme-de-lima.jpg?b=1&s=170667a&w=0&k=20&c=BjJWQyen3FSe6to8Nkq2jTRJ6v9aT_-B2Ay7Dnjq09c=",
+      "id": 3
+    },
+    {
+      "receita": "Brownie",
+      "ingredientes": "Chocolate",
+      "quantidade": "4",
+      "imagem": "https://cdn.pixabay.com/photo/2014/11/28/08/03/brownie-548591__340.jpg",
+      "id": 4
+    },
+    {
+      "receita": "victor hugo",
+      "ingredientes": "victor hugo",
+      "quantidade": "victor h",
+      "imagem": "victor hugo",
+      "status": false,
+      "id": 5
+    }
+  ]
+}

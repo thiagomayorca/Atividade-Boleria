@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="danger" mode="ios">
+    <ion-title>
+      Loja de Bolos Caseiros
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div id="container">
+
+    
+     <ion-card>
+      <img alt="" src="https://cdn.pixabay.com/photo/2016/11/22/18/52/cake-1850011__340.jpg" />
+      <ion-card-header>
+        <ion-card-title>Loja de Bolos Caseiros</ion-card-title>
+        <ion-card-subtitle>Seja Bem vindo</ion-card-subtitle>
+      </ion-card-header>
+    
+      <ion-card-content>
+        A vida é muito simples, coma bolo! Para dias frios nada melhor do que um bolo! Variedades de sabores é aqui! Com muito amor nosso queridinho bolo. 
+ 
+      </ion-card-content>
+    </ion-card> 
+
+    <ion-list>
+
+
+      <ion-item-sliding *ngFor = "let receita of receitas">
+
+        <ion-item [routerLink]="['/detalhes', receita.id]">
+
+          <ion-label>{{receita.receita}}</ion-label>
+        </ion-item>
+
+          <ion-item-options>         
+            <ion-item-option  color="danger"><ion-icon name="trash-outline"  (click)="deletar(receita.id)"></ion-icon></ion-item-option>
+
+
+            <ion-item-option color="success" ><ion-icon  name="pencil-outline" [routerLink]="['/form',receita.id]" ></ion-icon></ion-item-option>
+          </ion-item-options>
+            
+         
+
+
+
+        </ion-item-sliding>
+  
+  
+  
+      </ion-list>
+      
+      <!-- Botão Flutuante-->
+<ion-fab horizontal ="top" vertical="bottom" > 
+  <ion-fab-button (click)="alertando()"> 
+    <ion-icon name="add-outline"> </ion-icon>
+   </ion-fab-button>
+</ion-fab> 
+
